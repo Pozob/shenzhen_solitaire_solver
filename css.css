@@ -1,4 +1,7 @@
-html, body, input, button {
+html,
+body,
+input,
+button {
     font-family: monospace;
     font-size: 16px;
 }
@@ -27,9 +30,9 @@ html, body, input, button {
     background-position: 3px 3px;
     padding: 0 6px;
     border-radius: 3px;
-    border-top:2px solid white;
+    border-top: 2px solid white;
     box-shadow: 0px 0px 0px 1px #aaa, 0px 1px 3px 1px #ddd, 0px -2px 2px 0px #aaa;
-    transition: .2s box-shadow;
+    transition: 0.2s box-shadow;
     font-size: 20px;
 }
 .card.selected {
@@ -65,7 +68,9 @@ html, body, input, button {
     background-image: url(img/coins.png);
     color: rgb(180, 0, 0);
 }
-.tray, .add-card, .slot {
+.tray,
+.add-card,
+.slot {
     margin: 10px;
     min-width: 70px;
 }
@@ -77,7 +82,7 @@ html, body, input, button {
     padding: 14px;
     background-color: white;
     border-radius: 3px;
-    border-top:2px solid white;
+    border-top: 2px solid white;
     box-shadow: 0px 0px 0px 1px #aaa, 0px 1px 3px 1px #ddd;
 }
 #selector p {
@@ -89,7 +94,7 @@ html, body, input, button {
     border: 1px solid black;
     border-radius: 3px;
     background-color: transparent;
-    transition: .2s background-color;
+    transition: 0.2s background-color;
     cursor: pointer;
 }
 #selector img:hover {
@@ -113,7 +118,7 @@ button {
     background-color: #ddd;
     padding: 8px 10px;
     cursor: pointer;
-    transition: .2s background-color, .2s box-shadow;
+    transition: 0.2s background-color, 0.2s box-shadow;
 }
 button[disabled] {
     cursor: not-allowed;
@@ -139,12 +144,13 @@ button.red:hover {
     height: 16px;
     opacity: 0.3;
     cursor: pointer;
-    transition: .1s opacity;
+    transition: 0.1s opacity;
 }
 .close:hover {
     opacity: 1;
 }
-.close:before, .close:after {
+.close:before,
+.close:after {
     position: absolute;
     left: 8px;
     content: ' ';
@@ -180,13 +186,13 @@ button.red:hover {
 @keyframes highlight-from {
     50% {
         background-color: yellow;
-        box-shadow: 0px 0px 0px 1px #aaa, 0px 1px 3px 1px #ddd, 0px -2px 2px 0px #aaa, 0 0 3px 3px orange
+        box-shadow: 0px 0px 0px 1px #aaa, 0px 1px 3px 1px #ddd, 0px -2px 2px 0px #aaa, 0 0 3px 3px orange;
     }
 }
 @keyframes highlight-to {
     50% {
         background-color: orange;
-        box-shadow: 0px 0px 0px 1px #aaa, 0px 1px 3px 1px #ddd, 0px -2px 2px 0px #aaa, 0 0 3px 3px orangered
+        box-shadow: 0px 0px 0px 1px #aaa, 0px 1px 3px 1px #ddd, 0px -2px 2px 0px #aaa, 0 0 3px 3px orangered;
     }
 }
 .card.selected-from {
@@ -194,7 +200,8 @@ button.red:hover {
     animation-duration: 3s;
     animation-iteration-count: infinite;
 }
-.card.selected-target, .tray.selected-target:empty {
+.card.selected-target,
+.tray.selected-target:empty {
     animation-name: highlight-to;
     animation-duration: 3s;
     animation-delay: 1.5s;
@@ -209,4 +216,8 @@ button.red:hover {
     position: relative;
     left: -225px;
     margin-bottom: 14px;
+}
+
+.autoclicker {
+    margin-bottom: 1em;
 }

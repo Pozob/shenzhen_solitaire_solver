@@ -11,7 +11,7 @@
         <script src="xxhash.min.js"></script>
         <script src="main.js"></script>
         <script src="solver.js"></script>
-        <link rel="stylesheet" href="css.css" />  
+        <link rel="stylesheet" href="css.css" />
     </head>
     <body>
         <h2 class="center-page">
@@ -29,7 +29,13 @@
         <button id="solve-btn" onclick="solve()" class="center-page" style="width: 200px">SOLVE</button><br />
         <button id="help-btn" onclick="help()" class="center-page" style="width: 200px">HELP</button>
         <br /><br />
-        <div id="solution-box" class="center pages-wrapper" style="display:none">
+        <div id="solution-box" class="center pages-wrapper" style="display: none">
+            <div class="autoclicker">
+                <label for="autoscroller">Start Autoscroller</label>
+                <input type="checkbox" id="autoscroller" class="js-start-autoscroller" />
+                <label for="autoscroller-wait-time">Time to wait:</label>
+                <input type="number" id="autoscroller-wait-time" placeholder="Waittime in seconds" value="5" class="js-autoscroller-wait-time" />
+            </div>
             <div class="pages"></div>
             <div class="navigation">
                 <button class="prev-page">&lt;</button>
@@ -39,11 +45,14 @@
                 <button class="next-page">&gt;</button>
             </div>
         </div>
-        <div id="selector" style="display:none" tabindex="0">
+        <div id="selector" style="display: none" tabindex="0">
             <div class="flex special">
                 <div style="margin-right: 8px">
                     <p>DRAGONS :</p>
-                    <img src="img/dragon_green.png" alt="dragon green" /><img src="img/dragon_red.png" alt="dragon red" /><img src="img/dragon_white.png" alt="dragon white" />
+                    <img src="img/dragon_green.png" alt="dragon green" /><img src="img/dragon_red.png" alt="dragon red" /><img
+                        src="img/dragon_white.png"
+                        alt="dragon white"
+                    />
                 </div>
                 <hr style="margin-right: 8px" />
                 <div>
@@ -55,7 +64,10 @@
             <div class="flex suits">
                 <div style="margin-right: 8px">
                     <p>SUITS :</p>
-                    <img src="img/bamboo.png" alt="suit bamboo" /><img src="img/characters.png" alt="suit char" /><img src="img/coins.png" alt="suit coin" /><br />
+                    <img src="img/bamboo.png" alt="suit bamboo" /><img src="img/characters.png" alt="suit char" /><img
+                        src="img/coins.png"
+                        alt="suit coin"
+                    /><br />
                 </div>
                 <div>
                     <p>Number :<input type="number" name="suit-number" id="suit-number" min="1" max="9" value="1" maxlength="1" /></p>
