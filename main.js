@@ -405,6 +405,9 @@ function help() {
             'Delete => Remove the selected card\n' +
             'Escape => Close the selector dialog and unselect current card\n' +
             '\n' +
-            "Don't forget to turn the Caps Lock off otherwise you may have some problems with shortcut :D"
+            'Don\'t forget to turn the Caps Lock off otherwise you may have some problems with shortcut :D\n' +
+            '\n' +
+            'This version of the solver automatically focuses the next card and enables quick input of the card.\n' +
+            'It also comes with an auto-play feature of the solutions page'
     );
 }
